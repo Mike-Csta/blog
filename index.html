@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script>
+    <!-- <script>
       (function () {
         // do motywu testowo czy da sie bez contextu
         const isDark =
@@ -10,6 +10,20 @@
           (!("theme" in localStorage) &&
             window.matchMedia("(prefers-color-scheme: dark)").matches);
 
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script> -->
+    <script>
+      (function () {
+        // default ciemny
+        const isDark = 
+          localStorage.getItem("theme") === "dark" || 
+          (!("theme" in localStorage)); 
+    
         if (isDark) {
           document.documentElement.classList.add("dark");
         } else {
