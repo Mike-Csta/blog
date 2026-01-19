@@ -1,5 +1,9 @@
+import Hero from "./Hero";
+
 export default function Home() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center"></div>
+    <div className="flex w-full flex-col items-center justify-center">
+      <Hero />
+    </div>
   );
 }

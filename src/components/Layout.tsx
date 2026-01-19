@@ -8,7 +8,7 @@ const Layout = ({ children }: LayoutType) => {
   return (
     <div className="flex h-screen flex-col overflow-hidden">
       <NavigationBar />
-      <main className="flex-1 overflow-y-auto p-4">{children}</main>
+      <main className="flex-1 overflow-y-auto">{children}</main>
     </div>
   );
 };
