@@ -3,18 +3,18 @@ import MeshGradient from "./components/MeshGradientBackground";
 
 const Hero = () => {
   return (
-    <section className="items-center relative flex w-full justify-center overflow-hidden border-b">
+    <section className="items-center relative flex w-full justify-center overflow-hidden pb-7 border-b">
       <MeshGradient />
       <div className="flex w-300 flex-col items-center justify-center gap-8 md:gap-15 pt-9 md:py-20 text-center">
         <div className="text-primary/60 flex items-center gap-3 rounded-full border px-2.5 py-1">
           <PulseCircle />
           Research & Learning in progress
         </div>
-        <h1 className="px-4 text-5xl font-bold lg:text-8xl">
+        <h1 className="text-5xl font-bold lg:text-8xl">
           {/* Inżynieria, architektura i granice optymalizacji. */}
           Inżynieria, architektura i inne głupoty.
         </h1>
-        <div className="text-primary/60 px-7 text-xl md:text-2xl leading-9 md:px-30">
+        <div className="text-primary/60  text-xl md:text-2xl leading-9 md:px-23">
           {/* Zero marketingu, dużo kodu. Traktuję to miejsce jak inżynierski
           notatnik: bawię się C#, walczę o wydajność frontendu i weryfikuję
           podejście Full Cycle. */}
@@ -22,7 +22,7 @@ const Hero = () => {
           optymalizacje frontendu, nad którymi aktualnie pracuję. W tle testuję
           podejście Full Cycle w realnych projektach.
         </div>
-        <div className="gap-2 space-x-2 space-y-4 md:flex w-full p-7 justify-center z-2">
+        <div className="gap-2 space-x-2 space-y-4 md:flex w-full justify-center z-2">
           <Button className="p-6 py-7 text-lg w-full md:w-fit ">
             Zobacz nad czym pracuję
           </Button>

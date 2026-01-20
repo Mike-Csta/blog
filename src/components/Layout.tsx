@@ -7,10 +7,10 @@ type LayoutType = {
 const Layout = ({ children }: LayoutType) => {
   return (
     <div className="flex h-screen w-full flex-col overflow-hidden">
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-6xl px-7 ">
         <NavigationBar />
       </div>
-      <main className="flex-1 w-full overflow-y-auto">
+      <main className="flex-1 w-full overflow-y-auto px-7 ">
         <div className="mx-auto max-w-6xl">{children}</div>
       </main>
     </div>
