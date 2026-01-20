@@ -6,15 +6,16 @@ const Hero = () => {
     <section className="items-center relative flex w-full justify-center overflow-hidden pb-7 border-b">
       <MeshGradient />
       <div className="flex w-300 flex-col items-center justify-center gap-8 md:gap-15 pt-9 md:py-20 text-center">
-        <div className="text-primary/60 flex items-center gap-3 rounded-full border px-2.5 py-1">
+        <div className="text-primary/60 flex items-center gap-2 rounded-full border px-2.5 py-1">
           <PulseCircle />
-          Research & Learning in progress
+          <p className="hidden md:block">Research & Learning in progress</p>
+          <p className="block md:hidden">Research in progress</p>
         </div>
-        <h1 className="text-5xl font-bold lg:text-8xl">
+        <h1 className="text-5xl font-bold lg:text-7xl mx-18">
           {/* Inżynieria, architektura i granice optymalizacji. */}
           Inżynieria, architektura i inne głupoty.
         </h1>
-        <div className="text-primary/60  text-xl md:text-2xl leading-9 md:px-23">
+        <div className="text-primary/60  text-xl md:text-xl leading-7.5 md:px-23">
           {/* Zero marketingu, dużo kodu. Traktuję to miejsce jak inżynierski
           notatnik: bawię się C#, walczę o wydajność frontendu i weryfikuję
           podejście Full Cycle. */}
@@ -23,13 +24,13 @@ const Hero = () => {
           podejście Full Cycle w realnych projektach.
         </div>
         <div className="gap-2 space-x-2 space-y-4 md:flex w-full justify-center z-2">
-          <Button className="p-6 py-7 text-lg w-full md:w-fit ">
+          <Button className="p-6  text-md w-full md:w-fit ">
             Zobacz nad czym pracuję
           </Button>
           <Button
             asChild
             variant="outline"
-            className="text-primary/60  w-full cursor-pointer gap-3  p-6 py-7 text-lg md:w-fit"
+            className="text-primary/60  w-full cursor-pointer gap-3 p-6 pl-5 text-sm md:w-fit"
           >
             <a
               href="https://github.com/Mike-Csta"
