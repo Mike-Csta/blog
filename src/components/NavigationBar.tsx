@@ -22,7 +22,7 @@ const NavigationBar = ({
   return (
     <div
       className={cn(
-        "bg-blue flex items-center justify-between border-b py-3",
+        "bg-background/80 backdrop-blur-md flex items-center justify-between border-b py-3 px-7",
         className,
       )}
       {...props}
