@@ -24,8 +24,8 @@ const Hero = () => {
           podejście Full Cycle w realnych projektach.
         </div>
         <div className="gap-2 space-x-2 space-y-4 md:flex w-full justify-center z-2">
-          <Button className="p-6  text-md w-full md:w-fit ">
-            Zobacz nad czym pracuję
+          <Button asChild className="p-6 text-md w-full md:w-fit">
+            <a href="#bento-grid">Zobacz nad czym pracuję</a>
           </Button>
           <Button
             asChild
