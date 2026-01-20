@@ -44,7 +44,7 @@ export default BentoGrid;
 
 const BentoHeader = () => {
   return (
-    <div className="flex w-full items-end justify-between gap-10 px-15 py-20">
+    <div className="flex w-full items-end justify-between gap-10 py-20">
       <div>
         <h2 className="text-3xl font-semibold">Obszary badań</h2>
         <p className="text-primary/60 text-2xl leading-15">
