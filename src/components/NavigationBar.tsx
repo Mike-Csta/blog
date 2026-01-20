@@ -22,32 +22,34 @@ const NavigationBar = ({
   return (
     <div
       className={cn(
-        "bg-background/80 backdrop-blur-md flex items-center justify-between border-b py-3 px-7",
+        "bg-background/80 backdrop-blur-md border-b m-auto",
         className,
       )}
       {...props}
     >
-      <div className="flex items-center gap-2 text-md font-semibold">
-        <div className="bg-foreground text-accent flex h-6 w-6 items-center justify-center rounded-xs text-sm">
-          M
+      <div className="flex items-center justify-between  py-3 px-7 md:px-0  max-w-6xl m-auto">
+        <div className="flex items-center gap-2 text-md font-semibold">
+          <div className="bg-foreground text-accent flex h-6 w-6 items-center justify-center rounded-xs text-sm">
+            M
+          </div>
+          Mikołaj Chlasta
         </div>
-        Mikołaj Chlasta
-      </div>
 
-      <NavigationMenu className="hidden md:flex">
-        <NavigationMenuList className="gap-5">
-          {NAV_LINKS.map((link) => (
-            <NavigationMenuItem key={link.to}>
-              <StyledNavigationMenuLink to={link.to}>
-                {link.label}
-              </StyledNavigationMenuLink>
-            </NavigationMenuItem>
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
-      <div className="flex items-center justify-center gap-3 ">
-        <ThemeSwitch />
-        <Button> Kontakt</Button>
+        <NavigationMenu className="hidden md:flex">
+          <NavigationMenuList className="gap-5">
+            {NAV_LINKS.map((link) => (
+              <NavigationMenuItem key={link.to}>
+                <StyledNavigationMenuLink to={link.to}>
+                  {link.label}
+                </StyledNavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+        <div className="flex items-center justify-center gap-3 ">
+          <ThemeSwitch />
+          <Button> Kontakt</Button>
+        </div>
       </div>
     </div>
   );
