@@ -27,7 +27,7 @@ const NavigationBar = ({
       )}
       {...props}
     >
-      <div className="flex items-center gap-2 text-lg font-semibold">
+      <div className="flex items-center gap-2 text-md font-semibold">
         <div className="bg-foreground text-accent flex h-6 w-6 items-center justify-center rounded-xs text-sm">
           M
         </div>
@@ -45,7 +45,7 @@ const NavigationBar = ({
           ))}
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-3 ">
         <ThemeSwitch />
         <Button> Kontakt</Button>
       </div>
@@ -66,7 +66,7 @@ const StyledNavigationMenuLink = ({
     <NavigationMenuLink
       asChild
       className={cn(
-        "text-lg font-medium opacity-60 transition-opacity hover:bg-transparent hover:opacity-100 focus:bg-transparent",
+        "text-md font-medium opacity-60 transition-opacity hover:bg-transparent hover:opacity-100 focus:bg-transparent",
         className,
       )}
     >
