@@ -6,12 +6,15 @@ type LayoutType = {
 
 const Layout = ({ children }: LayoutType) => {
   return (
-    <div className="flex h-screen w-full flex-col overflow-hidden">
-      <div className="mx-auto w-full max-w-6xl px-7 ">
-        <NavigationBar />
+    <div className="relative flex h-screen w-full flex-col overflow-hidden">
+      <div className="absolute top-0 z-50 w-full ">
+        <div className="mx-auto w-full max-w-6xl">
+          <NavigationBar />
+        </div>
       </div>
-      <main className="flex-1 w-full overflow-y-auto px-7 ">
-        <div className="mx-auto max-w-6xl">{children}</div>
+
+      <main className="flex-1 w-full overflow-y-auto px-7">
+        <div className="mx-auto max-w-6xl pt-20">{children}</div>
       </main>
     </div>
   );
