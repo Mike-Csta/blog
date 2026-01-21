@@ -48,9 +48,11 @@ const content = [
 
 const BentoGrid = () => {
   return (
-    <section id="bento-grid" className="w-full scroll-mt-15">
-      <BentoHeader />
-      <BentoContent />
+    <section id="bento-grid" className="w-full scroll-mt-15 border-b">
+      <div className="max-w-6xl m-auto">
+        <BentoHeader />
+        <BentoContent />
+      </div>
     </section>
   );
 };
@@ -75,7 +77,7 @@ const BentoHeader = () => {
 
 const BentoContent = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pb-7 mb-7 border-b">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pb-7 mb-7 ">
       {content.map((item, index) => (
         <BentoCard
           key={index}
