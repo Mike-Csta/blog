@@ -27,7 +27,7 @@ const NavigationBar = ({
       )}
       {...props}
     >
-      <div className="flex items-center justify-between  py-3 px-7 md:px-0  max-w-6xl m-auto">
+      <div className="flex items-center justify-between  py-3 px-5 xl:px-0  max-w-6xl m-auto">
         <div className="flex items-center gap-2 text-md font-semibold">
           <div className="bg-foreground text-accent flex h-6 w-6 items-center justify-center rounded-xs text-sm">
             M

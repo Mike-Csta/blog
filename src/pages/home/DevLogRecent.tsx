@@ -29,7 +29,7 @@ const content = [
 
 const DevLogRecent = () => {
   return (
-    <section className="w-full border-b">
+    <section className="w-full border-b px-5">
       <div className="max-w-6xl m-auto">
         <DevLogRecentHeader />
         <DevLogRecentContent />
