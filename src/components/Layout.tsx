@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutType) => {
       </div>
 
       <main className="flex-1 w-full overflow-y-auto px-7">
-        <div className="mx-auto max-w-6xl pt-20">{children}</div>
+        <div className="mx-auto pt-20">{children}</div>
       </main>
     </div>
   );

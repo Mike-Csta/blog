@@ -1,6 +1,7 @@
 import BentoGrid from "./BentoGrid";
 import DevLogRecent from "./DevLogRecent";
 import Hero from "./Hero";
+import QuoteSection from "./QuoteSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <BentoGrid />
       <DevLogRecent />
+      <QuoteSection />
     </div>
   );
 }

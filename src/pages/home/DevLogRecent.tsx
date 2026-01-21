@@ -29,10 +29,12 @@ const content = [
 
 const DevLogRecent = () => {
   return (
-    <div className="w-full">
-      <DevLogRecentHeader />
-      <DevLogRecentContent />
-    </div>
+    <section className="w-full border-b">
+      <div className="max-w-6xl m-auto">
+        <DevLogRecentHeader />
+        <DevLogRecentContent />
+      </div>
+    </section>
   );
 };
 
@@ -56,7 +58,7 @@ const DevLogRecentHeader = () => {
 
 const DevLogRecentContent = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pb-7 mb-7 border-b">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 pb-7  ">
       {content.map((item, index) => (
         <DevLogRecentCard
           key={index}
