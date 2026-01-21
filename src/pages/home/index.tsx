@@ -1,5 +1,6 @@
 import BentoGrid from "./BentoGrid";
 import DevLogRecent from "./DevLogRecent";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import QuoteSection from "./QuoteSection";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <BentoGrid />
       <DevLogRecent />
       <QuoteSection />
+      <Footer />
     </div>
   );
 }
