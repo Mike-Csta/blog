@@ -12,11 +12,11 @@ const Hero = () => {
             <p className="hidden md:block">Research & Learning in progress</p>
             <p className="block md:hidden">Research in progress</p>
           </div>
-          <h1 className="text-5xl font-bold lg:text-7xl mx-18">
+          <h1 className="text-5xl font-bold lg:text-7xl p-5">
             {/* Inżynieria, architektura i granice optymalizacji. */}
             Inżynieria, architektura i inne głupoty.
           </h1>
-          <div className="text-primary/60  text-xl md:text-xl leading-7.5 md:px-23 px-8">
+          <div className="text-primary/60  text-xl md:text-xl leading-7.5 md:px-23 px-5">
             {/* Zero marketingu, dużo kodu. Traktuję to miejsce jak inżynierski
           notatnik: bawię się C#, walczę o wydajność frontendu i weryfikuję
           podejście Full Cycle. */}
@@ -24,7 +24,7 @@ const Hero = () => {
             optymalizacje frontendu, nad którymi aktualnie pracuję. W tle
             testuję podejście Full Cycle w realnych projektach.
           </div>
-          <div className="gap-2 space-x-2 space-y-4 md:flex w-full justify-center z-2 px-8">
+          <div className="gap-2 space-x-2 space-y-4 md:flex w-full justify-center z-2 px-5">
             <Button asChild className="p-6 text-md w-full md:w-fit">
               <a href="#bento-grid">Zobacz nad czym pracuję</a>
             </Button>
