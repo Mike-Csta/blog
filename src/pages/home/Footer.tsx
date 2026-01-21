@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <section className="w-full max-w-6xl py-8 text-sm flex justify-between items-center flex-col md:flex-row text-primary/50">
