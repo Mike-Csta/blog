@@ -48,7 +48,7 @@ const content = [
 
 const BentoGrid = () => {
   return (
-    <section id="bento-grid" className="w-full scroll-mt-15 border-b">
+    <section id="bento-grid" className="w-full scroll-mt-15 border-b px-5">
       <div className="max-w-6xl m-auto">
         <BentoHeader />
         <BentoContent />
